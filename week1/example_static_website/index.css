@@ -1,0 +1,41 @@
+#mainBox{
+	height: 100vh;
+	background-image: url("./img/welcome-background2.jpg");
+	background-size: cover;
+	position: relative;
+}
+
+#solidity_logo_box{
+	height: 100vh;
+	float: left;
+	width: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#class_description{
+	height: 100vh;
+	float: right;
+	width: 50%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+#solidity_logo_box > img {
+	height: 70%;
+}
+
+#class_description > img {
+	height: 20%;
+}
+
+.flex-item{
+	flex: auto;
+}
+
+#metamaskbtn{
+	padding-top: 50px;
+}

@@ -43,6 +43,6 @@ contract Toyota is Car, Petrol{
     }
 
     function fuelUsage(uint distance) public pure returns(uint){
-        return distance * 2; //2L per km
+        return distance * fuelPrice("unleaded"); //2L per km
     }
 }

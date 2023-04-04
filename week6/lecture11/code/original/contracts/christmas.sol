@@ -12,17 +12,18 @@ contract christmas{
         naughty_list["Mark"] = 0;
     }
 
-    function get_score(string memory name) external view returns(uint){
+    function get_score(string calldata name) external view returns(uint){
         return naughty_list[name];
     }
 
-	function increase_naughty_score(string memory name) public {
+	function increase_naughty_score(string calldata name) public {
         bool not_in_list = true;
+        bytes32 inputHash = keccak256(abi.encodePacked(name));
 
         for(uint i = 0; i < names.length; i++){
-            if (keccak256(abi.encodePacked(names[i]))== keccak256(abi.encodePacked(name))){
+            if (keccak256(abi.encodePacked(names[i]))== inputHash){
                 not_in_list = false;
-                naughty_list[names[i]] += 10;
+                naughty_list[name] += 10;
             }
         }
 

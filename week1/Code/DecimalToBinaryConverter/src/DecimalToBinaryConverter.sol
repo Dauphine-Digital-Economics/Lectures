@@ -3,8 +3,6 @@
 pragma solidity ^0.8.23;
 
 contract DecimalToBinaryConverter {
-    
-
     function decimalInput(uint userInput) public pure returns(string memory){
         //instantiate needed variables
         uint quotient;

@@ -1,3 +1,6 @@
 [submodule "week1/Code/Empty Contract/lib/forge-std"]
 	path = week1/Code/Empty Contract/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "week1/Code/DecimalToBinaryConverter/lib/forge-std"]
+	path = week1/Code/DecimalToBinaryConverter/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
